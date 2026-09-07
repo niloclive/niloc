@@ -432,8 +432,8 @@ body {
 }
 
 .btn-primary {
-  background-color: #38bdf8;
-  color: #0b0f17;
+  background-color: #E50914;
+  color: #0b0b0f;
 }
 
 .btn-secondary {
@@ -455,7 +455,7 @@ body {
   padding-bottom: 25px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   margin-bottom: 40px;
-  color: #ffffff;
+  color: #F0E9D6;
   font-size: 13px;
   font-weight: 600;
 }
