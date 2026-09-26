@@ -1,0 +1,234 @@
+/* ==========================================
+   GLOBAL RESET & BASE STYLES
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #060910; /* Water Black / Deep Navy */
+  color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ==========================================
+   HEADER & NAVIGATION
+   ========================================== */
+.header-container {
+  width: 100%;
+  background-color: #060910;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.nav-brand h1 {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.nav-divider {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #9ca3af;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #E50914; /* Netflix Red active/hover state */
+}
+
+/* ==========================================
+   FOOTER SECTION
+   ========================================== */
+.site-footer {
+  background-color: #060910;
+  color: #d1d5db;
+  padding: 60px 5% 30px 5%;
+  border-top: 2px solid #E50914; /* Netflix Red top accent line */
+  margin-top: 50px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto 40px auto;
+}
+
+.footer-col h3 {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+
+/* Middle Branding & Socials */
+.footer-middle {
+  max-width: 1300px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-brand h2 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin: 0;
+}
+
+.footer-brand span {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #E50914;
+  font-weight: 700;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials a {
+  color: #9ca3af;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-socials a:hover {
+  color: #E50914;
+  transform: translateY(-2px);
+}
+
+/* Footer Divider */
+.footer-divider {
+  border: none;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 1300px;
+  margin: 0 auto 30px auto;
+}
+
+/* Bottom Legal & Notes */
+.footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.optout-link {
+  margin-bottom: 15px;
+}
+
+.optout-link a {
+  color: #d1d5db;
+  text-decoration: underline;
+}
+
+.copyright-text {
+  margin-bottom: 15px;
+}
+
+.copyright-text strong {
+  color: #ffffff;
+}
+
+.copyright-text a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.copyright-text a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-note {
+  font-size: 11.5px;
+  color: #6b7280;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================== */
+@media (max-width: 768px) {
+  .footer-middle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav-links {
+    gap: 15px;
+  }
+}

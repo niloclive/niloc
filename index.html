@@ -3,220 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OMNIA Navigation Bar</title>
-
-  <!-- Font Awesome Icons & CSS File Link -->
+  <title>NILOC Prime</title>
   <link rel="icon" type="image/png" href="websitelogo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Main Navigation Header Container -->
   <header class="header-container">
-    
-    <!-- TOP ROW: Logo, Search Bar, Store & Login -->
     <div class="top-bar">
-      
-      <!-- Logo Section -->
       <div class="nav-brand">
-        <img src="omxlivelogo.png" alt="omxlivelogo"class =logo-img>
+        <h1>NILOC</h1>
       </div>
+    </div>
 
-      <!-- Search Input Box Section -->
-      <!-- <div class="search-box">
-        <input type="text" placeholder="Search..." />
-      </div>  -->
-
-      <!-- Right Action Items (Store & Login) Section -->
-      <div class="top-actions">
-        <!-- Store / Cart Button -->
-        <a href="store.html" class="action-item">
-          <span>Store</span>
-          <span><i class="fa-solid fa-store"></i></span>
-        </a>
-
-        <!-- Login Button -->
-        <!--<a href="#" class="action-item">
-          <span>Login</span>
-          <i class="fa-solid fa-circle-user"></i>
-          <span class="icon"></span  -->
-        </a>
-      </div>
-
-    </div> <!-- End of Top Row -->
-
-    <!-- Horizontal Divider Line -->
     <hr class="nav-divider">
 
-    <!-- BOTTOM ROW: Main Navigation Links -->
     <nav class="bottom-nav">
-      <!-- 3-Line Hamburger Button (Left Side) -->
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-
       <ul class="nav-links">
-
         <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="tech.html">Tech</a></li>
-        <li><a href="visual-lab.html">visual Lab </a></li>
+        <li><a href="download.html">Download</a></li>
+        
+        <!-- DISCOVER DROPDOWN -->
+        <li class="dropdown">
+          <a href="#" class="drop-trigger">Discover ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="tech.html">Tech</a></li>
+            <li><a href="visual-lab.html">Visuals</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="help.html">Help Center</a></li>
+          </ul>
+        </li>
+
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
-
-    <!-- 3-Line Menu Drawer (Popup) -->
-    <div class="menu-drawer" id="menuDrawer">
-      <div class="drawer-header">
-        <span>Account & Navigation</span>
-        <button class="close-btn" id="closeBtn">&times;</button>
-      </div>
-      <ul class="drawer-links">
-        <li><a href="index.html"> Home</a></li>
-        <li><a href="download.html"> Download App</a></li>
-        <!-- <li><a href="login.html"> Signup / Login</a></li> -->
-        <li><a href="#support"> Help & Support</a></li>
-      </ul>
-    </div>
-
-    <!-- Background Overlay -->
-    <div class="overlay" id="overlay"></div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero-section">
-    <h1 class="hero-title">
-      "Building Next-Gen Web Experiences & Intelligent Systems"
-    </h1>
-    <p class="sub-heading">
-      ...empowering brands to scale faster through seamless technology, clean aesthetics, and high-impact visual experiences.
-    </p>
-    <br>
-    <p class="note-line">
-            bridging the gap between raw backend logic and immersive motion design.
-    </p>
-    <br>
-    
+  <main class="hero-section-wrapper">
+    <section class="hero-card">
+      <h1 class="hero-title">
+        Building Next-Gen Web Experiences <br>
+        <span class="gradient-text">& Intelligent Systems</span>
+      </h1>
+
+      <p class="hero-desc">
+        Empowering brands to scale faster through seamless technology, clean aesthetics, and high-impact visual experiences.
+      </p>
+
+      <div class="hero-divider"></div>
+
+      <p class="hero-bridge">
+        Bridging the gap between raw backend logic and immersive motion design.
+      </p>
+    </section>
+
     <div class="marquee-container">
       <div class="marquee-track">
-        <!-- Set 1 -->
-        <i class="fa-brands fa-html5 html-icon"></i>
-        <i class="fa-brands fa-css3-alt css-icon"></i>
-        <i class="fa-brands fa-js js-icon"></i>
-        <i class="fa-brands fa-node-js node-icon"></i>
-
-        <!-- Set 2 (Duplicate for seamless infinite scrolling) -->
-        <i class="fa-brands fa-html5 html-icon"></i>
-        <i class="fa-brands fa-css3-alt css-icon"></i>
-        <i class="fa-brands fa-js js-icon"></i>
-        <i class="fa-brands fa-node-js node-icon"></i>
+        <i class="fa-brands fa-html5 html-icon" title="HTML5"></i>
+        <i class="fa-brands fa-css3-alt css-icon" title="CSS3"></i>
+        <i class="fa-brands fa-js js-icon" title="JavaScript"></i>
+        <i class="fa-brands fa-node-js node-icon" title="Node.js"></i>
+        <i class="fa-brands fa-react react-icon" title="React / React Native"></i>
+        <i class="fa-brands fa-git-alt git-icon" title="Git"></i>
       </div>
     </div>
-</section>
-
-<!-- CTA (CALL TO ACTION) SECTION -->
-<section class="cta-section">
-  <div class="cta-features">
-    <div class="feature-item">
-      <span class="feature-icon"></span>
-      <span>100% Secure & Confidential</span>
-    </div>
-
-    <div class="feature-item">
-      <span class="feature-icon"></span>
-      <span>Fast & Reliable Delivery</span>
-    </div>
-
-    <div class="feature-item">
-      <span class="feature-icon"></span>
-      <span>Quality Assured</span>
-    </div>
-  </div>
-
-  <div class="cta-offer-badge">
-   <!--Free PenDrive Delivery on Premium Projects--> 
-  </div>
-</section>
+  </main>
 
   <footer class="site-footer">
     <div class="footer-top">
       <div class="footer-col">
-        <h3>About omnia India</h3>
+        <h3>Quick Links</h3>
         <ul>
           <li><a href="about.html">About us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="#">Careers [Hiring Soon]</a></li>
-          <li><a href="legal.html">legal</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Support</h3>
-        <ul>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="#">Refund & Policy</a></li>
-          <li><a href="#">Licensing / Terms of Use</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Resources</h3>
-        <ul>
-          <li><a href="articles.html">Articles</a></li>
-          <li><a href="#">Licensing Information</a></li>
-          <li><a href="#">Free Downloads</a></li>
-          <li><a href="#">How-To Guides</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Case Studies</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Accounts</h3>
-        <ul>
-          <li><a href="#">Log In / Register</a></li>
-          <li><a href="#">My Account</a></li>
-          <li><a href="#">My Downloads</a></li>
-          <li><a href="#">Order History</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Shopping</h3>
-        <ul>
-          <li><a href="#">Browse All Visuals</a></li>
-          <li><a href="#">Service Packages</a></li>
-          <li><a href="#">Best Sellers</a></li>
-          <li><a href="#">New Arrivals</a></li>
-          <li><a href="#">Pricing Plans</a></li>
+          <li><a href="legal.html">Legal</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer-middle">
       <div class="footer-brand">
-        <h2>OMX</h2>
-        <span>OMNIA INDIA</span>
+        <h2>NILOC</h2>
+        <span>Prime</span>
       </div>
 
       <div class="footer-socials">
-  </a>
-  <a href="https://www.instagram.com/@omxindia.live" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-    <i class="fa-brands fa-instagram"></i>
-  </a>
-  <a href="https://www.youtube.com/@omxlndia.live.official" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-    <i class="fa-brands fa-youtube"></i>
-  </a>
-  <a href="https://x.com/omxindia" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
-    <i class="fa-brands fa-x-twitter"></i>
-  </a>
-  <a href="https://www.linkedin.com/in/Omnia india" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
-</div>
+        <a href="https://www.facebook.com/blank" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/piyuush.icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@omxindia.live.official" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://x.com/omxindia" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/piyush-lakhera" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
     </div>
 
     <hr class="footer-divider">
@@ -227,7 +116,7 @@
       </div>
 
       <p class="copyright-text">
-        © 2026 <strong>Omnia India</strong>. All Rights Reserved.<br>
+        © 2026 <strong>NILOC</strong>. All Rights Reserved.<br>
         Designed & Developed by Piyush Lakhera | 
         <a href="privacy.html">Privacy Policy</a> | 
         <a href="#">Terms of Service</a> | 
@@ -240,66 +129,5 @@
     </div>
   </footer>
 
-  <!-- Drawer Script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const menuBtn = document.getElementById('menuBtn');
-      const menuDrawer = document.getElementById('menuDrawer');
-      const closeBtn = document.getElementById('closeBtn');
-      const overlay = document.getElementById('overlay');
-
-      if (menuBtn && menuDrawer) {
-        menuBtn.addEventListener('click', function() {
-          menuDrawer.classList.add('active');
-          if(overlay) overlay.classList.add('active');
-        });
-
-        function closeMenu() {
-          menuDrawer.classList.remove('active');
-          if(overlay) overlay.classList.remove('active');
-        }
-
-        if(closeBtn) closeBtn.addEventListener('click', closeMenu);
-        if(overlay) overlay.addEventListener('click', closeMenu);
-      } else {
-        console.error("Menu elements not found!");
-      }
-    });
-  
-  // Toggle between Sign In and Sign Up mode
-function toggleAuthMode(isSignIn) {
-  const title = document.querySelector('.auth-card h1');
-  const submitBtn = document.querySelector('.btn-submit');
-  
-  if (isSignIn) {
-    title.textContent = 'Sign in to Omnia X';
-    submitBtn.textContent = 'Sign In';
-  } else {
-    title.textContent = 'Join Omnia X';
-    submitBtn.textContent = 'Agree & Join';
-  }
-}
-
-function showCookieBanner() {
-    const consent = localStorage.getItem('omniax_cookie_consent');
-    if (!consent) {
-      document.getElementById('cookieBanner').style.display = 'block';
-    }
-  }
-
-  function acceptCookies() {
-    localStorage.setItem('omniax_cookie_consent', 'accepted');
-    localStorage.setItem('omniax_optout', 'false');
-    document.getElementById('cookieBanner').style.display = 'none';
-  }
-
-  function declineCookies() {
-    localStorage.setItem('omniax_cookie_consent', 'declined');
-    localStorage.setItem('omniax_optout', 'true');
-    document.getElementById('cookieBanner').style.display = 'none';
-  }
-
-  window.addEventListener('DOMContentLoaded', showCookieBanner);
-</script>
 </body>
 </html>

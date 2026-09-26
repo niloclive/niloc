@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Assets & Tech Study Hub - OMX Store</title>
+  <title>Digital Assets & Tech Study Hub - NILOC Store</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="store.css">
 </head>
@@ -18,14 +18,13 @@
 
     <!-- Store Header -->
     <div class="store-header">
-      <h1>Digital Assets & Tech Study Hub</h1>
-      <p>Premium Handwritten CS Notes, Visual Templates & Developer Resources.</p>
+      <h1>Code Notes & Tech Resources</h1>
+      <p>Everything you need to level up your web development journey.</p>
     </div>
 
     <!-- Filter Bar -->
     <div class="filter-bar">
       <button class="filter-btn active" onclick="filterStore('all', this)">All Products</button>
-      <!-- <button class="filter-btn" onclick="filterStore('visuals', this)">Visual Packs</button> -->
     </div>
 
     <!-- Product Grid -->
@@ -64,21 +63,21 @@
             <span class="original-price">&#8377;299</span>
           </div>
           <div class="card-actions">
-            <button class="btn-buy" onclick="buyNow('css_notes')">Buy Now</button>
+            <button class="btn-buy" onclick="buyNow('css_notes')">Buy Now</button>P
           </div>
         </div>
       </div>
 
-    <div class="product-card" data-category="notes">
+      <!-- Card 3: JS Notes -->
+      <div class="product-card" data-category="notes">
         <div class="card-img-holder">
          <img src="JS.png.png" alt="JavaScript Notes">
         </div>
         <div class="card-body">
           <h3>JS Complete Handwritten Notes</h3>
-          <p>Semantic HTML, Forms, Media Tags, Accessibility & Best Practices.</p>
+          <p>DOM Manipulation, ES6+ Features, Asynchronous JS, Events & Logic.</p>
           <div class="price-row">
             <span class="price">&#8377;299</span>
-           
           </div>
           <div class="card-actions">
             <button class="btn-buy" onclick="buyNow('js_notes')">Buy Now</button>
@@ -100,77 +99,37 @@
     </div>
   </div>
    
-  <!-- Full-Width Professional Footer -->
+  <!-- Clean & Minimal Footer -->
   <footer class="site-footer">
     <div class="footer-top">
       <div class="footer-col">
-        <h3>About Omnia India</h3>
+        <h3>NILOC</h3>
         <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Careers [Hiring Soon]</a></li>
-          <li><a href="#">Legal</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Support</h3>
-        <ul>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="#">Refund & Policy</a></li>
-          <li><a href="#">Licensing / Terms of Use</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Resources</h3>
-        <ul>
-          <li><a href="articles.html">Articles</a></li>
-          <li><a href="#">Licensing Information</a></li>
-          <li><a href="#">Free Downloads</a></li>
-          <li><a href="#">How-To Guides</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Case Studies</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Accounts</h3>
-        <ul>
-          <li><a href="#">Log In / Register</a></li>
-          <li><a href="#">My Account</a></li>
-          <li><a href="#">My Downloads</a></li>
-          <li><a href="#">Order History</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Shopping</h3>
-        <ul>
-          <li><a href="#">Browse All Visuals</a></li>
-          <li><a href="#">Service Packages</a></li>
-          <li><a href="#">Best Sellers</a></li>
-          <li><a href="#">New Arrivals</a></li>
-          <li><a href="#">Pricing Plans</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="legal.html">Legal</a></li>
         </ul>
       </div>
     </div>
 
     <div class="footer-middle">
       <div class="footer-brand">
-        <h2>OMX</h2>
-        <span>OMNIA INDIA</span>
+        <h2>NILOC</h2>
+        <span>PRIME</span>
       </div>
 
       <div class="footer-socials">
-        <a href="https://www.facebook.com/blank" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-          <i class="fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/@omxindia" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <a href="https://www.instagram.com/nilocprime" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <i class="fa-brands fa-instagram"></i>
         </a>
-        <a href="https://www.youtube.com/@omxindia" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <a href="https://www.youtube.com/@nilocprime" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
           <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://x.com/nilocprime" target="_blank" rel="noopener noreferrer" aria-label="X">
+          <i class="fa-brands fa-x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nilocprime" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
         </a>
       </div>
     </div>
@@ -178,16 +137,9 @@
     <hr class="footer-divider">
 
     <div class="footer-bottom">
-      <div class="optout-link">
-        <a href="#">Do not sell my personal information</a>
-      </div>
-
       <p class="copyright-text">
-        © 2026 <strong>Omnia India</strong>. All Rights Reserved.<br>
-        Designed & Developed by Piyush Lakhera | 
-        <a href="#">Privacy Policy</a> | 
-        <a href="#">Terms of Service</a> | 
-        <a href="#">Cookie Policy</a>
+        © 2026 <strong>NILOC</strong>. All Rights Reserved.<br>
+        Designed & Developed by Piyush Lakhera
       </p>
     </div>
   </footer>

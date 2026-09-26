@@ -16,91 +16,54 @@
 
         <!-- Header -->
         <div class="contact-header">
-            <span class="sub-tag">Experience of the future</span>
+            <span class="sub-tag">Global Communications</span>
             <h1>Get in Touch</h1>
-            <p>Have a project in mind, need technical assistance, or want to collaborate? Drop us a message below.</p>
+            <p>Connect directly with our engineering, visual design, and core development divisions.</p>
         </div>
 
-        <div class="contact-wrapper">
-            <!-- Left Side: Contact Info & Socials -->
-            <div class="contact-info-card">
-                <h3>Direct Support</h3>
-                <p class="info-desc">Reach out to us directly through our official channels. We are always ready to assist you.</p>
+        <div class="contact-wrapper single-column-center">
+            <!-- Centralized Enterprise Contact Card -->
+            <div class="contact-info-card enterprise-card">
+                <h3>Direct Channels</h3>
+                <p class="info-desc">We maintain streamlined communication channels for partnerships, technical inquiries, and project collaborations.</p>
 
-                <div class="info-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    <div>
-                        <span>Email Us</span>
-                        <a href="mailto:omxinidia01@gmail.com">omxindia01@gamil.com</a>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <span>Direct Email</span>
+                            <a href="mailto:omxindia01@gmail.com">omxindia01@gmail.com</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="info-item">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <div>
-                        <span>Location</span>
-                        <p>Jabalpur, Madhya Pradesh, India</p>
+                    <div class="info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span>Global Headquarters</span>
+                            <p>Jabalpur, Madhya Pradesh, India</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="info-item">
-                    <i class="fa-solid fa-clock"></i>
-                    <div>
-                        <span>Response Time</span>
-                        <p>Quick & reliable response within 24 hours</p>
+                    <div class="info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <span>Business Hours</span>
+                            <p>Monday – Saturday (Standard Response: 24h)</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="social-links-box">
-                    <span>Connect Socially</span>
+                    <span>Our Socials</span>
                     <div class="social-icons">
-                        <a href="https://instagram.com/omxinidia" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://youtube.com/@omxindia" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://instagram.com/@nilocprime" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/@nilocprime" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-x"></i></a>
+                        <a href="https://youtube.com/@nilocprime" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
-
-            <!-- Right Side: Professional Contact Form -->
-            <div class="contact-form-card">
-                <form id="contactForm" onsubmit="handleContactSubmit(event)">
-                    <div class="form-group">
-                        <label for="name">Your Full Name</label>
-                        <input type="text" id="name" placeholder="Enter your name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="Email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="service">Select Inquiry Type</label>
-                        <select id="service">
-                            <option value="web">Web Development & Tech</option>
-                            <option value="visuals">Live Visuals / LED Wall Mapping</option>
-                            <option value="store">Digital Assets & Notes Store</option>
-                            <option value="other">General Collaboration</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" rows="5" placeholder="Write your project details or query here..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn-submit">Send Message</button>
-                </form>
-            </div>
         </div>
     </section>
-
-    <script>
-        function handleContactSubmit(event) {
-            event.preventDefault();
-            alert('Thank you! Your message has been sent successfully.');
-            document.getElementById('contactForm').reset();
-        }
-    </script>
 
 </body>
 </html>
